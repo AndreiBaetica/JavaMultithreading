@@ -16,7 +16,7 @@ class Player extends Thread {
 		System.out.println("A player has selected the first card as: " + pickRandomCard(array));
 		System.out.println("A player has selected the second card as: " + pickRandomCard(array));
 		System.out.println("A player has selected the third card as: " + pickRandomCard(array));
-		System.out.println("A player has selected the forth card as: " + pickRandomCard(array));
+		System.out.println("A player has selected the fourth card as: " + pickRandomCard(array));
 	}
 	
 	String pickRandomCard (String[] array) {
@@ -52,9 +52,10 @@ public class App {
 	
 	private static void buildDeck() {
 		
-		for (int i=0; i<=9; i++) {
+		for (int i=0; i<=8; i++) {
 			cards[i] = Integer.toString(i+1);
 		}
+		cards[9] = "A";
 		cards[10] = "J";
 		cards[11] = "Q";
 		cards[12] = "K";
