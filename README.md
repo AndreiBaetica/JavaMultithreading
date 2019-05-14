@@ -1,4 +1,4 @@
-#Pick4Cards
+# Pick4Cards
 
 A small experiment written as a reminder of multithreading.
 4 players pick 4 cards, each on their separate threads, concurrently.
